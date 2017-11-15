@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/or1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_normal_message"
+            android:id="@+id/imageView"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_normal_code"
+            android:id="@+id/imageView2" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:hint="搜索一下"
+            android:gravity="center"
+            android:textColor="@color/ww"
+            android:ems="10"
+            android:drawableRight="@mipmap/ic_normal_search"
+            android:background="@color/orange2"
+            android:id="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/xre_xrv"
+        android:layout_height="match_parent">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+</LinearLayout>
